@@ -1,0 +1,123 @@
+body {
+    background: #1F0E02;
+    background: linear-gradient(
+        to left,
+        #1F0E02 0%,
+        #444 50%,
+        #1F0E02 100%
+    );
+    color: #444;
+    padding: 0 50px;
+}
+
+#header .navbar-left {
+    padding: 0;
+}
+
+.icons.nav > li > a:hover,
+.icons.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.icons.nav img:hover,
+.icons.nav img:focus {
+    animation: move-icon 0.15s linear alternate infinite;
+}
+
+@keyframes move-icon {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-15deg);}
+}
+
+main {
+    background-image: url(img/illi.png);
+    background-position: right 30px bottom;
+    background-repeat: no-repeat;
+    display: block;
+    min-width: 300px;
+}
+.sheet {
+    background-color: #F1F1F1;
+    margin: 30px auto;
+    opacity: .95;
+    padding: 20px 30px;
+    position:relative;
+    top:50px;
+}
+
+ul {
+    list-style: none;
+}
+
+#profile-name h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+
+#profile-name h2 {
+    font-size: 14px;
+    margin: 5px 0px 0px;
+}
+
+#profile-icons li {
+    float: left;
+    margin-right: 10px;
+}
+
+#skills {
+    display: inline;
+    cursor: pointer;
+}
+#skills-cloud {
+    background-color: #fff;
+    border: 1px #000 solid;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    width: 50%;
+    transition: opacity 0.4s linear;
+}
+
+#skills:hover #skills-cloud, #skills.hover #skills-cloud {
+    opacity: 1;
+    visibility: visible;
+}
+
+#skills-cloud li {
+    float: left;
+    margin-right: 10px;
+}
+
+main a,
+main a:visited,
+main a:hover,
+main a:active {
+    color: #6660a1;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+.circle {
+display: inline-block;
+width: 50px;
+height: 50px;
+background: #67A6EB;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+-o-border-radius: 50px;
+-ms-border-radius: 50px;
+border-radius: 50px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}

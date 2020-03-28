@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>escesc.info</title>
+    <script>
+    $(function(){
+      $('#skills').bind('touchstart', function(){
+          $(this).addClass('hover');
+      }).bind('touchend', function(){
+          $(this).removeClass('hover');
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <nav id="header" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a class="navbar-brand">escesc.info</a></li>
+        </ul>
+        <ul class="icons nav navbar-right">
+          <li><a href="https://twitter.com/neilling">
+            <img class="pull-right" src="img/twitter.svg" type="image/svg+xml" width="30" height="30">
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main class="sheet border-radius">
+        <div id="profile-name">
+          <h1>@neilli</h1>
+          <h2>Seiya Sakaguchi</h2>
+        </div>
+
+        <h2>Profile</h2>
+        <ul id="profile-detail">
+          <li>Birth: 1988</li>
+          <li>Work: programer (
+            <div id="skills">
+              <a>skills</a>
+              <div id="skills-cloud" class="border-radius">
+                <ul>
+                  <li>PHP</li>
+                  <li>Ruby</li>
+                  <li>C#</li>
+                  <li>VB.NET</li>
+                  <li>Java</li>
+                  <li>HTML5 &amp; CSS3</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+            </div>
+          )</li>
+          <li>Education: MS in molecular phylogenetics, Mar 2013</li>
+        </ul>
+
+        <ul id="profile-icons" class="clearfix">
+          <li><a href="https://twitter.com/neilling">
+            <img src="img/_twitter_.png" alt="つぶやき">
+          </a></li>
+          <li><a href="http://twilog.org/neilling">
+            <img src="img/twilog.png" alt="つぶやきログ">
+          </a></li>
+          <li><a href="http://booklog.jp/users/esc111">
+            <img src="img/booklog.png" alt="本棚">
+          </a></li>
+          <li><a href="http://www.lastfm.jp/user/grazepslo">
+            <img src="img/lastfm.png" alt="音楽棚">
+          </a></li>
+          <li><a href="https://github.com/neilli-sable">
+            <img src="img/github.png" alt="コード">
+          </a></li>
+          <li><a href="http://www.amazon.co.jp/registry/wishlist/3IX79JCB3MZ6Y">
+            <img src="img/amazon.png" alt="くれくれ">
+          </a></li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
